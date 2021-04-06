@@ -1,0 +1,5 @@
+namespace: nginx-dev
+bases:
+  - ../base
+images:
+  - name: nginx-image

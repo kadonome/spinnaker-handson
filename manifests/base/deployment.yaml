@@ -1,0 +1,23 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: nginx
+  labels:
+    service: nginx
+spec:
+  selector:
+    matchLabels:
+      service: nginx
+  template:
+    metadata:
+      labels:
+        service: nginx
+    spec:
+      containers:
+      - name: nginx
+        image: gcr.io/google-samples/hello-app:1.0
+        ports:
+        - containerPort: 80
+        resources:
+          requests:
+            cpu: 200m
