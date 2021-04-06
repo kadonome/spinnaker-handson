@@ -1,7 +1,0 @@
-namespace: nginx-rinka
-bases:
-  - ../base
-resources:
-  - namespace.yaml
-patchesStrategicMerge:
-  - deployment.yaml
