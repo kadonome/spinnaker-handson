@@ -1,5 +1,5 @@
 namespace: nginx-dev
 bases:
   - ../base
-images:
-  - name: nginx-image
+resources:
+  - namespace.yaml
